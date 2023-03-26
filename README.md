@@ -1,27 +1,18 @@
-# VariacaoAtivoClient
+## Projeto API com .NET Core 6.0 e Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Este projeto consiste em uma API criada com .NET Core 6.0 e uma aplicação cliente criada com Angular 15.2.4. A API utiliza Entity Framework Core e migrações para criar as tabelas no banco de dados, seguindo uma estrutura de camadas baseada em DDD (Domain-Driven Design).
 
-## Development server
+## Configuração do banco de dados
+Para criar as tabelas no SQL Server, é necessário rodar o comando update-database dentro do projeto VariacaoAtivos.Infra.Data. Além disso, é necessário alterar o servidor do banco de dados no arquivo appsettings.json.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Aplicação cliente
+A aplicação cliente foi criada com Angular 15.2.4, utilizando Node 18.14.2 e npm 9.5.0. A página foi criada em TypeScript, com HTML, CSS e Bootstrap.
+Para rodar  aplicação client é necessario executar o comando npm install.
 
-## Code scaffolding
+## Banco de dados
+O banco de dados utilizado foi o SQL Server.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Compilando o projeto
+É possível compilar tanto o projeto da API quanto o client no Visual Studio ou VS Code. Para isso, basta abrir o projeto na IDE desejada e realizar a compilação.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Esperamos que estas informações sejam úteis para rodar o projeto.
